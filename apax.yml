@@ -4,5 +4,12 @@ type: app
 targets:
   - "1500"
   - axunit-llvm
+  - plcsim
+
 devDependencies:
-  "@ax/sdk": 3.0.10
+  "@ax/sdk": ^3.0.19
+
+variables:
+  APAX_BUILD_ARGS: [ -d ]
+dependencies:
+  "@ax/trace": ^2.4.3
